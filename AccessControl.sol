@@ -9,17 +9,6 @@ contract AccessControl {
     //role => account => bool
     mapping(bytes32 => mapping(address => bool)) public roles;
     
-    //0xdf8b4c520ffe197c5343c6f5aec59570151ef9a492f2c624fd45ddde6135ec42// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
-
-contract AccessControl {
-    event GrantRole(bytes32 indexed role, address indexed account);
-    event RevokeRole(bytes32 indexed role, address indexed account);
-
-
-    //role => account => bool
-    mapping(bytes32 => mapping(address => bool)) public roles;
-    
     //0xdf8b4c520ffe197c5343c6f5aec59570151ef9a492f2c624fd45ddde6135ec42
     bytes32 private constant ADMIN = keccak256(abi.encodePacked("ADMIN"));
 
